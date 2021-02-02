@@ -1,0 +1,129 @@
+body {
+    font-family: Helvetica, monospace;
+    color: #444444;
+    background-color: #F1EBE4;
+}
+
+.nav {
+    background-color: #9AA8C1;
+}
+
+.gallery {
+    height: 100%;
+    border-radius: 5%;
+    padding: 15px;
+}
+
+.text {
+    color: #9AA8C1;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.bkg {
+    background: linear-gradient(180deg, #9AA8C1 60%, #F1EBE4 60%);
+}
+
+.center {
+    align-content: center;
+    text-align: center;
+}
+
+.paddingTB12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.paddingTop25 {
+    padding-top: 25px;
+}
+
+.paddingTop60 {
+    padding-top: 60px;
+}
+
+.paddingTop100 {
+    padding-top: 100px;
+}
+
+.button {
+    background-color: #9AA8C1;
+    color: #F1EBE4;
+}
+
+.centerVideo {
+    width: 560px;
+    height: 315px;
+    align-content: center;
+}
+
+.border1 {
+    border-style: dashed;
+    border-color: #9AA8C1;
+    border-radius: 10px;
+}
+
+.error {
+    color: #8F0C00;
+}
+
+.squareImg {
+    width: 300px;
+    height:300px;
+    object-fit:cover;
+}
+
+.alignLeft {
+    horiz-align: left;
+}
+
+.zoom {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(1.5);
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+
+
+
+

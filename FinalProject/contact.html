@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Kayla Wang">
+  <meta name="keywords" content="HTML, CSS">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" />
+
+<script src="contact.js">
+</script>
+
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark nav">
+  <a class="navbar-brand" href="index.html">Loof Studio</a>
+  <!--    <a class="navbar-brand" href="index.html">-->
+  <!--        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">-->
+  <!--    </a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link" href="shop.html">shop</a>
+      <a class="nav-link" href="gallery.html">gallery</a>
+      <a class="nav-link" href="about.html">about</a>
+      <a class="nav-link" href="contact.html">contact us</a>
+    </div>
+  </div>
+</nav>
+
+<hr>
+
+<h1>Contact Us</h1>
+
+<div class="container-fluid">
+  <div class = "row">
+    <div class="col col-lg-3 col-md-6 col-sm-12"></div>
+    <div class="col-lg-6 col-md-6 col-sm-12 border1 paddingTB12">
+      <form>
+        <div class="form-group">
+          <label for="firstName"> <b>First Name</b></label>
+          <input type="text" class="form-control" id="firstName" placeholder="first name">
+          <small class="error" id="firstNameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName"> <b>Last Name</b></label>
+          <input type="text" class="form-control" id="lastName" placeholder="last name">
+          <small class="error" id="lastNameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="topic"><b>Topic</b></label>
+          <small>please select an option</small>
+          <select class="form-control" id="topic">
+            <option id="suggestions" value=1>suggestions</option>
+            <option id="rOrder" value=2>recent order</option>
+            <option id="delivery" value=3>delivery</option>
+            <option id="product" value=4>product</option>
+            <option id="other" value=5>other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="orderNumber">Order Number (if applicable)</label>
+          <small>Please enter the 6 digit number associated with the order.</small>
+          <input type="text" class="form-control" id="orderNumber">
+          <small class="error" id="orderNumberError"></small>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email"><b>Email</b></label>
+          <input type="text" class="form-control" required id="email" placeholder="xxxx@example.com">
+          <small class="error" id="emailError"></small>
+        </div>
+
+
+        <div class="form-group">
+          <label for="description"><b>Description</b></label>
+          <textarea class="form-control" id="description" rows="3" placeholder="..."> </textarea>
+          <small class="error" id="descriptionError"></small>
+        </div>
+
+
+        <div class="form-group">
+          <label for="file"><b>File</b></label>
+          <small>(if applicable)</small>
+          <input type="file" class="form-control-file" id="file">
+        </div>
+
+        <div class="form-group row">
+          <label for="captcha" class="col-sm-2 col-form-label"><b>Captcha</b></label>
+          <div class="col-sm2"> <p>3 + 4 =</p></div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" required id="captcha">
+          </div>
+          <small class="error" id="captchaError"></small>
+        </div>
+
+<!--        <div class="form-group row">-->
+<!--          <label for="captcha" class="col-sm-2 col-form-label"><b>Captcha</b></label>-->
+<!--          <div class="col-sm-2" onLoad="generateCaptcha()">-->
+<!--            <p value="0" name="num"></p>-->
+<!--          </div>-->
+<!--          <div class="col-sm-2">-->
+<!--            <input type="text" class="form-control" required id="captcha">-->
+<!--          </div>-->
+<!--        </div>-->
+      </form>
+
+        <button type="button" class="btn button" onClick="submitForm()"> submit</button>
+        <small id="output"></small>
+
+    </div>
+  </div>
+</div>
+
+<br>
+
+</body>
+</html>

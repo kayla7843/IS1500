@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" />
+    <script
+            src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+    </script>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<!--    <script>paypal.Buttons().render('#pay');</script>-->
+
+    <script src="shop.js"></script>
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark nav">
+    <a class="navbar-brand" href="index.html">Loof Studio</a>
+    <!--    <a class="navbar-brand" href="index.html">-->
+    <!--        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">-->
+    <!--    </a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="shop.html">shop</a>
+            <a class="nav-link" href="gallery.html">gallery</a>
+            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="contact.html">contact us</a>
+        </div>
+    </div>
+</nav>
+
+<hr>
+
+<br>
+
+<!--the zoom effect slightly messes with the dynamic structure-->
+<!--consider removing it? but it looks nice...-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-lg-3 col-md-6 col-sm-12 zoom">
+            <img id="img1" src="media/shop/linked.JPG" alt="linked earrings" class="squareImg">
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 alignLeft">
+            <h2><b>Linked Earrings</b></h2>
+            <h3><b>$12.50</b></h3>
+            <br>
+            <p>Materials: Sterling Silver <br> Measurements: ~2.2cm in length</p>
+            <form>
+                <div class="form-group row">
+                    <label for="linked" class="col-sm-4 col-form-label">quantity:</label>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <input type="number" min="0" class="form-control" id="linked">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col col-lg-3 col-md-6 col-sm-12 zoom">
+            <img src="media/shop/green.jpg" alt="green flower earrings" class="squareImg">
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 alignLeft">
+            <h2><b>Beaded Flower Hoops</b></h2>
+            <h3><b>$13.00</b></h3>
+            <br>
+            <p>Materials: Sterling Silver, Glass Beads, String <br> Measurements: ~1.7cm in diameter</p>
+            <form>
+                <div class="form-group row">
+                    <label for="colorFlower" class="col-sm-4 col-form-label" >color:</label>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-control" id="colorFlower">
+                            <option>green</option>
+                            <option disabled>peach</option>
+                            <option disabled>lavender</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="flowerEarring" class="col-sm-4 col-form-label">quantity:</label>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <input type="number" min="0" class="form-control" id="flowerEarring">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col col-lg-3 col-md-6 col-sm-12 zoom">
+            <img src="media/shop/rings.jpg" alt="flower rings" class="squareImg">
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 alignLeft">
+            <h2><b>Flower Rings</b></h2>
+            <h3><b>$8.00</b></h3>
+            <br>
+            <p>Materials: Sterling Silver, Glass Beads, String <br> Measurements: various</p>
+            <form>
+                <div class="form-group row">
+                    <label for="colorRing" class="col-sm-4 col-form-label" >color:</label>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-control" id="colorRing">
+                            <option>peach</option>
+                            <option>green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="flowerRing" class="col-sm-4 col-form-label">quantity:</label>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <input type="number" min="0" class="form-control" id="flowerRing">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col col-lg-3 col-md-6 col-sm-12 zoom">
+            <img src="media/shop/blueDewdrop.JPG" alt="blue dewdrop earrings" class="squareImg">
+        </div>
+        <div class="col col-lg-3 col-md-6 col-sm-12 alignLeft">
+            <h2><b>Dewdrop Earrings</b></h2>
+            <h3><b>$12.00</b></h3>
+            <br>
+            <p>Materials: Sterling Silver, Glass Beads <br> Measurements: ~1cm in length</p>
+            <form>
+                <div class="form-group row">
+                    <label for="colorDew" class="col-sm-4 col-form-label" >color:</label>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <select class="form-control" id="colorDew">
+                            <option>blue</option>
+                            <option disabled>green</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="dewEarring" class="col-sm-4 col-form-label">quantity:</label>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <input type="number" min="0" class="form-control" id="dewEarring">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+<h1 class="text">Purchase</h1>
+
+<p id="calculate"></p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-lg-4 col-md-6 col-sm-12"></div>
+        <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="form-group">
+                <label for="coupon" class="center"> <b>Coupon</b></label>
+                <input type="text" class="form-control" id="coupon">
+                <small class="error" id="couponError"></small>
+            </div>
+
+            <p id="output"></p>
+        </div>
+        <div class="col col-lg-4 col-md-6 col-sm-12"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-lg-5 col-md-6 col-sm-12"></div>
+    <div class="col col-lg-2 col-md-6 col-sm-12">
+        <button type="button" class="btn button center w-100" onClick="calculate()"> calculate</button>
+    </div>
+    <div class="col col-lg-5 col-md-6 col-sm-12"></div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col col-lg-4 col-md-4 col-sm-12"></div>
+    <div id="pay" class="col col-lg-4 col-md-4 col-sm-12">
+    <div class="col col-lg-4 col-md-6 col-sm-4"></div>
+</div>
+</div>
+
+<br>
+
+
+
+
+
+
+
+</body>
+</html>

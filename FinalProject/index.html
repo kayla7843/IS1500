@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Kayla Wang">
+    <meta name="keywords" content="HTML, CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" />
+
+    <script>
+        var coupon = "...use LOOF10 for 10% off now";
+
+        function onHover(x) {
+            if(x === 1) {
+                document.getElementById("code").innerHTML = coupon;
+            }
+            else {
+                document.getElementById("code").innerHTML = "";
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark nav">
+    <a class="navbar-brand" href="index.html">Loof Studio</a>
+<!--    <a class="navbar-brand" href="index.html">-->
+<!--        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">-->
+<!--    </a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="shop.html">shop</a>
+            <a class="nav-link" href="gallery.html">gallery</a>
+            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="contact.html">contact us</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid bkg">
+    <div class = "row">
+        <div class = "col col-lg-4 col-md-6 col-sm-12">
+            <img src="media/home/purpleEarring.jpg" alt="Purple Earring" class=" w-100 center paddingTop25">
+        </div>
+        <div class = "col col-lg-4 col-md-6 col-sm-12">
+                <img id="img1"
+                     src="media/home/sky.gif" alt="Moving Sky" class="w-100 center paddingTop100"
+                     onMouseOver="this.src = 'media/home/flowerEarrings.JPG'"
+                     onmouseout="this.src = 'media/home/sky.gif'"
+                />
+        </div>
+        <div class = "col col-lg-4 col-md-6 col-sm-12">
+                <img src="media/home/rings.jpg" alt="Moving Sky" class="w-100 center paddingTop70">
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="w-100">
+    <a class="btn btn-lg btn-block button" href="shop.html" role="button">shop now</a>
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+<div class="text">
+    <h1>upcoming</h1>
+    <p>preparing for the winter season... </p>
+</div>
+
+<div class = "container-fluid">
+    <div class="row">
+        <img id="snow" src="media/home/snowflake.jfif" alt="snowflake" class="circle"
+        onmouseover="onHover(1);" onmouseout="onHover(3);"/>
+    </div>
+    <br>
+    <div class="row">
+        <p id="code" class="text w-100"></p>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12"></div>
+        <div class="embed-responsive embed-responsive-16by9 col-lg-6 col-md-12 col-sm-12">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wJ_AFDzoQ6A" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12"></div>
+    </div>
+</div>
+
+<br>
+
+<hr>
+
+
+
+
+
+
+</body>
+</html>
