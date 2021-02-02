@@ -1,0 +1,54 @@
+h1 {
+    background-color: lightpink;
+    font-size: 35px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: pink;
+    text-align: left;
+    font-size:25px;
+}
+
+label {
+    color: gray;
+}
+
+.macaron {
+    height: 400px;
+    width: 375px;
+}
+
+.banner {
+    height: 175px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.macaronLine {
+    height: 30px;
+    background-size: 30px;
+    background-image: url("images/macaron.gif");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.heading {
+    font-size: 25px;
+    color: gray;
+}
+
+.content {
+    font-size: 15px;
+    color: gray;
+}
+
+.error {
+    color: red;
+}
