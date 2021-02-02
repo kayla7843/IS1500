@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 9 - Wang.kay</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link href="logStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="GameWorld.html">Game World </a>
+            <a class="nav-link" href="index.html">Rainy Day </a>
+            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link" href="flowers.html">Flowers</a>
+            <a class="nav-link" href="login.html">Login</a>
+
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Login</h1>
+    </div>
+</div>
+
+<form class="w-75" action="login.php" method="post">
+    <div class="form-group">
+        <label for="username" class="col-sm-2 col-form-label">Username:</label>
+        <input type="text" class="form-control" required name="username">
+        <small class="error" id="usernameError"></small>
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-sm-2 col-form-label">Password:</label>
+        <input type="text" class="form-control" required name="password">
+        <small class="error" id="passwordError"></small>
+    </div>
+    <div>
+    <button type="submit" class="btn btn-primary mb-2">submit</button>
+    </div>
+</form>
+
+</body>
+</html>

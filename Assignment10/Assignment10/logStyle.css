@@ -1,0 +1,11 @@
+body {
+    font-family: "Courier New", Serif, monospace; 
+}
+
+.error {
+    color: red;
+}
+
+form {
+    margin-left: 15px;
+}
